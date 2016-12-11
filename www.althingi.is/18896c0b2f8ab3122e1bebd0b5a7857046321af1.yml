@@ -1,0 +1,53 @@
+---
+request:
+  method: get
+  uri: http://www.althingi.is/altext/cv/is?cstafur=%C3%96
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Sun, 11 Dec 2016 00:50:26 GMT
+    Server:
+    - Eplica
+    X-Frame-Options:
+    - SAMEORIGIN
+    X-Ua-Compatible:
+    - IE=Edge,chrome=1
+    X-Hystrixlog:
+    - ''
+    Powered-By:
+    - Eplica CMS 3
+    Last-Modified:
+    - Sun, 11 Dec 2016 00:50:26 GMT
+    Expires:
+    - Sun, 11 Dec 2016 00:50:26 GMT
+    Cache-Control:
+    - public, must-revalidate, max-age=0
+    Content-Type:
+    - text/html;charset=UTF-8
+    Content-Language:
+    - is-IS
+    Vary:
+    - Accept-Encoding
+    Set-Cookie:
+    - JSESSIONID=2197EB20D7F58B80BF2417F766C514DE; Path=/
+    - eplicaWebVisitor=-501544880; Version=1; Comment="Re-Authentication purposes
+      only"; Max-Age=30000000; Expires=Thu, 23-Nov-2017 06:10:26 GMT
+    Transfer-Encoding:
+    - chunked
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Sun, 11 Dec 2016 00:50:27 GMT

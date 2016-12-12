@@ -13,7 +13,6 @@ icelandic_urls = {
         }
 
 def scraped_page_for(url)
-  puts "Opening: #{url}"
   _ = Scraped::HTML.new(response: Scraped::Request.new(url: url).response)
 end
 

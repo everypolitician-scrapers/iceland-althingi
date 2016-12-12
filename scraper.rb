@@ -14,7 +14,7 @@ icelandic_urls = {
 
 def scraped_page_for(url)
   puts "Opening: #{url}"
-  Scraped::HTML.new(response: Scraped::Request.new(url: url).response)
+  _ = Scraped::HTML.new(response: Scraped::Request.new(url: url).response)
 end
 
 EnglishMembersPage.new(response: Scraped::Request.new(url: english_url).response)

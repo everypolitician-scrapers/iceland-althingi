@@ -7,10 +7,10 @@ require_rel 'lib'
 
 english_url = 'http://www.althingi.is/altext/cv/en/'
 icelandic_urls = {
-        members: 'http://www.althingi.is/thingmenn/althingismenn/',
-        alternates: 'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
-        substitues: 'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/'
-        }
+  members: 'http://www.althingi.is/thingmenn/althingismenn/',
+  alternates: 'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
+  substitues: 'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/'
+}
 
 def scraped_page_for(url)
   Scraped::HTML.new(response: Scraped::Request.new(url: url).response)

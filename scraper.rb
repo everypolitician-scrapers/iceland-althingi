@@ -13,19 +13,19 @@ icelandic_urls = {
         }
 
 def scraped_page_for(url)
-  _ = Scraped::HTML.new(response: Scraped::Request.new(url: url).response)
+  Scraped::HTML.new(response: Scraped::Request.new(url: url).response)
 end
 
 EnglishMembersPage.new(response: Scraped::Request.new(url: english_url).response)
                   .member_urls
                   .each do |url|
-                    scraped_page_for(url)
+                    _ = scraped_page_for(url)
                   end
 
 icelandic_urls.each do |key, url|
   IcelandicMembersPage.new(response: Scraped::Request.new(url: url).response)
              .member_urls
              .each do |url|
-               scraped_page_for(url)
+               _ = scraped_page_for(url)
              end
 end

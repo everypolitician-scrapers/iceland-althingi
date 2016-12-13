@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'pry'
 require 'require_all'
 require 'scraped'
@@ -6,12 +7,12 @@ require 'scraped_page_archive/open-uri'
 require_rel 'lib'
 
 members_pages = {
-  EnglishMembersPage => ['http://www.althingi.is/altext/cv/en/'],
+  EnglishMembersPage   => ['http://www.althingi.is/altext/cv/en/'],
   IcelandicMembersPage => [
     'http://www.althingi.is/thingmenn/althingismenn/',
     'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
-    'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/'
-  ]
+    'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/',
+  ],
 }
 
 def scraped_page_for(url, klass = Scraped::HTML)

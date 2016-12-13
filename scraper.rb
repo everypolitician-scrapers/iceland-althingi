@@ -6,7 +6,7 @@ require 'scraped_page_archive/open-uri'
 require_rel 'lib'
 
 urls = {
-  EnglishMembersPage => [ 'http://www.althingi.is/altext/cv/en/'],
+  EnglishMembersPage => ['http://www.althingi.is/altext/cv/en/'],
   IcelandicMembersPage => [
     'http://www.althingi.is/thingmenn/althingismenn/',
     'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
@@ -21,9 +21,9 @@ end
 urls.each do |key, urls|
   urls.each do |url|
     scraped_page_for(url, key)
-               .member_urls
-               .each do |url|
-                 _ = scraped_page_for(url)
-               end
+      .member_urls
+      .each do |url|
+      _ = scraped_page_for(url)
+    end
   end
 end

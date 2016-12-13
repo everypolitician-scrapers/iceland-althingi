@@ -18,8 +18,8 @@ def scraped_page_for(url, klass = Scraped::HTML)
   klass.new(response: Scraped::Request.new(url: url).response)
 end
 
-members_pages.each do |key, _page_urls|
-  urls.each do |page_url|
+members_pages.each do |key, page_urls|
+  page_urls.each do |page_url|
     scraped_page_for(page_url, key)
       .member_urls
       .each do |member_url|

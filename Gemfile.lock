@@ -39,7 +39,13 @@ GEM
     httpclient (2.8.3)
     method_source (0.8.2)
     mini_portile2 (2.1.0)
+    minispec-metadata (2.0.0)
+      minitest
     minitest (5.10.1)
+    minitest-vcr (1.4.0)
+      minispec-metadata (~> 2.0)
+      minitest (>= 4.7.5)
+      vcr (>= 2.9)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     open-uri-cached (0.0.5)
@@ -81,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
+  minitest-vcr
   nokogiri
   open-uri-cached
   pry
@@ -89,6 +96,8 @@ DEPENDENCIES
   scraped!
   scraped_page_archive!
   scraperwiki!
+  vcr
+  webmock
 
 RUBY VERSION
    ruby 2.3.3p222

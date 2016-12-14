@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'minitest/autorun'
+require_relative './test_helper'
 require_relative '../lib/english_members_page.rb'
 
 describe EnglishMembersPage do

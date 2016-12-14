@@ -2,7 +2,7 @@
 require_relative './test_helper'
 require_relative '../lib/english_members_page.rb'
 
-describe EnglishMembersPage do
+describe EnglishMembersPage, :vcr do
   describe 'member_urls' do
     it 'should return the expected number of urls' do
       url = 'http://www.althingi.is/altext/cv/en/'

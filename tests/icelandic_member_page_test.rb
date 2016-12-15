@@ -2,10 +2,17 @@
 require_relative './test_helper'
 require_relative '../lib/icelandic_members_page.rb'
 
-describe IcelandicMembersPage, :vcr do
+describe IcelandicMembersPage do
+  url = 'http://www.althingi.is/thingmenn/althingismenn/'
+
+  around do |test|
+    VCR.use_cassette('IcelandicMembersPage') do
+      test.call
+    end
+  end
+
   describe 'member_urls' do
     it 'should return the expected number of urls' do
-      url = 'http://www.althingi.is/thingmenn/althingismenn/'
       IcelandicMembersPage.new(response: Scraped::Request.new(url: url)
                                                          .response)
                           .member_urls
@@ -16,7 +23,6 @@ describe IcelandicMembersPage, :vcr do
 
   describe 'member_urls' do
     it 'should return an expected url in its result' do
-      url = 'http://www.althingi.is/thingmenn/althingismenn/'
       IcelandicMembersPage.new(response: Scraped::Request.new(url: url)
                                                          .response)
                           .member_urls

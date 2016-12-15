@@ -2,10 +2,17 @@
 require_relative './test_helper'
 require_relative '../lib/english_members_page.rb'
 
-describe EnglishMembersPage, :vcr do
+describe EnglishMembersPage do
+  url = 'http://www.althingi.is/altext/cv/en/'
+
+  around do |test|
+    VCR.use_cassette('EnglishMembersPage') do
+      test.call
+    end
+  end
+
   describe 'member_urls' do
     it 'should return the expected number of urls' do
-      url = 'http://www.althingi.is/altext/cv/en/'
       EnglishMembersPage.new(response: Scraped::Request.new(url: url).response)
                         .member_urls
                         .count

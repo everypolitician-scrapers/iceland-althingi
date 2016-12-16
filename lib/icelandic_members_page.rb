@@ -2,10 +2,10 @@
 require 'scraped'
 
 class IcelandicMembersPage < Scraped::HTML
+  decorator Scraped::Response::Decorator::AbsoluteUrls
+
   field :member_urls do
     noko.xpath('//table[@id="t_thingmenn"]/tbody/tr/td/span/a/@href')
-        .map do |row|
-      URI.join(url, row.text).to_s
-    end
+        .map(&:text)
   end
 end

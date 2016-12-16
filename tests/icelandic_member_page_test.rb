@@ -3,13 +3,9 @@ require_relative './test_helper'
 require_relative '../lib/icelandic_members_page.rb'
 
 describe IcelandicMembersPage do
-  url = 'http://www.althingi.is/thingmenn/althingismenn/'
+  around { |test| VCR.use_cassette('IcelandicMembersPage', &test) }
 
-  around do |test|
-    VCR.use_cassette('IcelandicMembersPage') do
-      test.call
-    end
-  end
+  url = 'http://www.althingi.is/thingmenn/althingismenn/'
 
   describe 'member_urls' do
     it 'should return the expected number of urls' do

@@ -1,0 +1,53 @@
+---
+request:
+  method: get
+  uri: http://www.althingi.is/altext/cv/is/?nfaerslunr=1290
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Tue, 21 Mar 2017 15:08:24 GMT
+    Server:
+    - Eplica
+    X-Frame-Options:
+    - SAMEORIGIN
+    X-Ua-Compatible:
+    - IE=Edge,chrome=1
+    X-Hystrixlog:
+    - ''
+    Powered-By:
+    - Eplica CMS 3
+    Last-Modified:
+    - Tue, 21 Mar 2017 15:08:24 GMT
+    Expires:
+    - Tue, 21 Mar 2017 15:08:24 GMT
+    Cache-Control:
+    - public, must-revalidate, max-age=0
+    Content-Type:
+    - text/html;charset=UTF-8
+    Content-Language:
+    - is-IS
+    Vary:
+    - Accept-Encoding
+    Set-Cookie:
+    - JSESSIONID=A4084DAA9D96C1B0F5F6C0787A9BA877; Path=/
+    - eplicaWebVisitor=-1688654869; Version=1; Comment="Re-Authentication purposes
+      only"; Max-Age=30000000; Expires=Sat, 03-Mar-2018 20:28:24 GMT
+    Transfer-Encoding:
+    - chunked
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Tue, 21 Mar 2017 15:08:24 GMT

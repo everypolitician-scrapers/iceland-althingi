@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative './test_helper'
 require_relative '../lib/english_members_page.rb'
 

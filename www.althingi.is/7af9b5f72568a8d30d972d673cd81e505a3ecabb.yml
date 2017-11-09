@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 08 Nov 2017 07:56:49 GMT
+    - Thu, 09 Nov 2017 05:05:41 GMT
     Server:
     - Eplica
     X-Frame-Options:
@@ -30,9 +30,9 @@ response:
     Powered-By:
     - Eplica CMS 3
     Last-Modified:
-    - Wed, 08 Nov 2017 07:56:49 GMT
+    - Thu, 09 Nov 2017 05:05:41 GMT
     Expires:
-    - Wed, 08 Nov 2017 07:56:49 GMT
+    - Thu, 09 Nov 2017 05:05:41 GMT
     Cache-Control:
     - public, must-revalidate, max-age=0
     Content-Type:
@@ -42,12 +42,12 @@ response:
     Vary:
     - Accept-Encoding
     Set-Cookie:
-    - JSESSIONID=39610297C764796B10C0447B2FEDD28B; Path=/
-    - eplicaWebVisitor=-1794194852; Version=1; Comment="Re-Authentication purposes
-      only"; Max-Age=30000000; Expires=Sun, 21-Oct-2018 13:16:49 GMT
+    - JSESSIONID=2BF96D6D466F3E46CB92852FB5169538; Path=/
+    - eplicaWebVisitor=-2015264123; Version=1; Comment="Re-Authentication purposes
+      only"; Max-Age=30000000; Expires=Mon, 22-Oct-2018 10:25:41 GMT
     Transfer-Encoding:
     - chunked
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 08 Nov 2017 07:56:49 GMT
+recorded_at: Thu, 09 Nov 2017 05:05:41 GMT

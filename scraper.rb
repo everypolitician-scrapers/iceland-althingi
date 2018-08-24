@@ -7,11 +7,11 @@ require 'scraped_page_archive/open-uri'
 require_rel 'lib'
 
 members_pages = {
-  EnglishMembersPage   => ['http://www.althingi.is/altext/cv/en/'],
+  EnglishMembersPage   => ['https://www.althingi.is/altext/cv/en/'],
   IcelandicMembersPage => [
-    'http://www.althingi.is/thingmenn/althingismenn/',
-    'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
-    'http://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/',
+    'https://www.althingi.is/thingmenn/althingismenn/',
+    'https://www.althingi.is/thingmenn/thingmenn/varamenn-sem-sitja-a-althingi/',
+    'https://www.althingi.is/thingmenn/thingmenn/varamenn-sem-hafa-tekid-saeti/',
   ],
 }
 

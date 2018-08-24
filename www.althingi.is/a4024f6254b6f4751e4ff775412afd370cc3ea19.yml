@@ -1,0 +1,55 @@
+---
+request:
+  method: get
+  uri: https://www.althingi.is/altext/cv/en/
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Fri, 24 Aug 2018 20:59:05 GMT
+    Server:
+    - Eplica
+    X-Frame-Options:
+    - SAMEORIGIN
+    Strict-Transport-Security:
+    - max-age=63072000; includeSubdomains;
+    X-Ua-Compatible:
+    - IE=Edge,chrome=1
+    X-Hystrixlog:
+    - ''
+    Powered-By:
+    - Eplica CMS 3
+    Last-Modified:
+    - Fri, 24 Aug 2018 20:59:05 GMT
+    Expires:
+    - Fri, 24 Aug 2018 21:49:05 GMT
+    Cache-Control:
+    - public, must-revalidate, max-age=3000
+    Content-Type:
+    - text/html;charset=UTF-8
+    Content-Language:
+    - en
+    Vary:
+    - Accept-Encoding
+    Set-Cookie:
+    - JSESSIONID=A26114D8210A339302D9A4FE12F20A97; Path=/
+    - eplicaWebVisitor=-1392155167; Version=1; Comment="Re-Authentication purposes
+      only"; Max-Age=30000000; Expires=Wed, 07-Aug-2019 02:19:05 GMT
+    Content-Length:
+    - '10432'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Fri, 24 Aug 2018 20:59:06 GMT

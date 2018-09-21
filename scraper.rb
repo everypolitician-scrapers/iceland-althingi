@@ -2,7 +2,6 @@
 require 'pry'
 require 'require_all'
 require 'scraped'
-require 'scraped_page_archive/open-uri'
 
 require_rel 'lib'
 
@@ -22,6 +21,8 @@ end
 members_pages.each do |key, page_urls|
   page_urls.each do |page_url|
     scraped_page_for(page_url, key).member_urls.each do |member_url|
+      # for now we don't do anything, this is only for archiving the data
+      # but as we've turned archiving off this is essentially all a NOOP
       _ = scraped_page_for(member_url)
     end
   end
